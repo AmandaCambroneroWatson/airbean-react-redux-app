@@ -1,0 +1,29 @@
+@import '../utilities/colors';
+
+.avatar {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  .head {
+    margin-bottom: 2rem;
+    height: 5rem;
+    width: 5rem;
+    background: $orange;
+    border-radius: 100%;
+  }
+  .body {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
+    background: $orange;
+    position: absolute;
+    top: 102px;
+  }
+}

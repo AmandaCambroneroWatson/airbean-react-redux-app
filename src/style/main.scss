@@ -1,0 +1,10 @@
+@import './layout.scss';
+@import './utilities/fonts';
+
+body,
+body > *,
+* > * {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,55 @@
+@import './utilities/colors';
+@import './layouts/Landing.scss';
+@import './layouts/Profile.scss';
+@import './layouts/Menu.scss';
+@import './layouts/Menu.scss';
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(min-content, max-content);
+}
+.bg-brown {
+  background: $brown;
+}
+.bg-pink {
+  background: $pink;
+}
+.bg-orange {
+  background: $orange;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-header {
+  grid-column: 1/13;
+  grid-row: 1/2;
+  min-width: 100%;
+}
+.img-footer {
+  grid-column: 1/13;
+  grid-row: auto;
+  min-width: 100%;
+  margin-top: auto;
+}
+.round {
+  grid-column: 2 / 3;
+  grid-row: 1 / 12;
+  margin-top: 15px;
+}
+.cart {
+  grid-column: 11/12;
+  grid-row: 1 / 12;
+  margin-top: 15px;
+}
+
+.grid > *:not(.img-header, .dropdown, .cart-dropdown) {
+  z-index: 99;
+}
+
+button {
+  margin: 0 auto;
+}

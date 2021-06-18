@@ -1,0 +1,74 @@
+@import './colors';
+
+h1,
+h2,
+button {
+  @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+  font-family: 'PT Serif', serif;
+}
+h3,
+h4,
+p,
+label,
+input {
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+  font-family: 'Work Sans', sans-serif;
+}
+.big-h1 {
+  font-size: 3rem;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 120%;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: normal;
+}
+
+p,
+label,
+input {
+  font-size: 14px;
+}
+
+button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.white {
+  color: white;
+}
+
+.brown {
+  color: $brown;
+}
+.white-transparent {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.caption {
+  font-size: 12px;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.line-big {
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+.line-small {
+  text-decoration: line-through;
+}
+.red {
+  color: red;
+}
